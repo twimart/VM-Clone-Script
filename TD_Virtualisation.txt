@@ -1,0 +1,28 @@
+1. NAT (Network Address Translation)
+Avantages
+Simplicité : Configuration facile, accès Internet sans réglages supplémentaires.
+Sécurité : Isolation des VMs, moins de risques d'attaques externes.
+Économie d'IP : Plusieurs VMs partagent l'adresse IP de l'hôte.
+Inconvénients
+Accessibilité limitée : Pas d'accès direct depuis le réseau externe.
+Problèmes de compatibilité : Applications nécessitant des connexions directes peuvent rencontrer des difficultés.
+Latence potentielle : Traduction d'adresses peut introduire une légère latence.
+
+
+2. Accès par Pont (Bridged Networking)
+Avantages
+Intégration complète : Les VMs obtiennent une adresse IP sur le même réseau que l'hôte.
+Accessibilité totale : Communication directe avec d'autres appareils sur le réseau local.
+Configuration automatique possible : Obtention d'une adresse IP via DHCP.
+Inconvénients
+Risques de sécurité : Exposition aux menaces du réseau local.
+Besoin d'adresses IP disponibles : Chaque VM nécessite une adresse unique.
+Complexité potentielle : Risques de conflits d'adresses IP.
+
+3. Host-only Networking
+Avantages
+Isolation complète : Communication entre VMs et hôte, sans accès Internet.
+Gestion facile : Contrôle des ressources internes sans exposition externe.
+Inconvénients
+Pas d'accès à Internet : Limite certaines applications nécessitant une connexion en ligne.
+Configuration manuelle nécessaire pour l'accès externe : Requiert des ajustements si un accès Internet est nécessaire plus tard.
