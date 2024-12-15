@@ -8,7 +8,6 @@ Accessibilité limitée : Pas d'accès direct depuis le réseau externe.
 Problèmes de compatibilité : Applications nécessitant des connexions directes peuvent rencontrer des difficultés.
 Latence potentielle : Traduction d'adresses peut introduire une légère latence.
 
-
 2. Accès par Pont (Bridged Networking)
 Avantages
 Intégration complète : Les VMs obtiennent une adresse IP sur le même réseau que l'hôte.
